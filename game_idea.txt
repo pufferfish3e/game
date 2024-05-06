@@ -1,0 +1,9 @@
+Game idea:
+- puzzle game/ war??
+- manage a nation
+- medival times
+- expand as much as possible and mantain population 
+- should be more than 40 percent
+- strategy game
+- variables: food, water, health??
+- actions: mine, eat, drink, soldier management
