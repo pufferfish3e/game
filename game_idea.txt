@@ -1,13 +1,13 @@
 Game idea:
-- puzzle game/ war??
+- puzzle game/ war??. Should be a puzzle game.... like a war themed puzzle game. 
 - manage a nation
 - medival times
-- expand as much as possible and mantain population 
+- expand as much as possible and mantain population. Expand to conquer the world with many kingdoms which acts according to simple rules and are determined by a "wisdom" variable. As in, if the kingdom has more wisdom, it should not randomly attack but only do so when it is strategic. 
 - should be more than 40 percent
 - strategy game
-- variables: food, water, health??
-- actions: mine, eat, drink, soldier management
+- variables: food, water, health?? no no. The variables should be food, water, people, number_of_farm, number_of_wells, number_of_mines, at least those which are shown to the player
+- actions: mine, eat, drink, soldier management. No you are not controlling a player I think... like you have no need to eat like your citizens do, instead, you only manage move, fight, build, and move people. 
 
 
 to-do list:
-1. add an epilogue
+1. add an epilogue.
