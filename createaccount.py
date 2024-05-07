@@ -1,21 +1,27 @@
 import yaml
-import random
+import sys
 
-username = input("Welcome! what is ur username? ")
-generated_key = ""
-i = 0
-while i < 9:
-   key = random.randint(0,9)
-   generated_key += str(key)
-   i += 1
-print(generated_key)
-try:
-    with open("gamedata.yaml", "r") as file:
-        existing_data = yaml.safe_load(file)
-except FileNotFoundError:
-    existing_data = {}
+def create_instance(username, hunger, water, life):
+   try:
+      with open("gamedata.yaml", "r") as file:
+         existing_data = yaml.safe_load(file)
+   except FileNotFoundError:
+      existing_data = {}
 
-existing_data[str(username)] = generated_key
+   if username in existing_data:
+      print("Username Taken. Try another!")
+      sys.exit()
 
-with open("gamedata.yaml", "w") as file:
-    yaml.safe_dump(existing_data, file)
+   if existing_data is None:
+      existing_data = {}
+
+   existing_data[username] = {
+      "hunger": hunger,
+      "water": water,
+      "life": life
+    }
+   with open("gamedata.yaml", "w") as file:
+      yaml.safe_dump(existing_data, file)
+new_hunger,new_water,new_life = 100,100,100
+new_username = input("Hello there! What is your name?")
+create_instance(new_username, new_hunger, new_water, new_life)

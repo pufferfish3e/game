@@ -1,2 +1,2 @@
-import random
-
+def check_stats():
+   pass
