@@ -7,3 +7,7 @@ Game idea:
 - strategy game
 - variables: food, water, health??
 - actions: mine, eat, drink, soldier management
+
+
+to-do list:
+1. add an epilogue
